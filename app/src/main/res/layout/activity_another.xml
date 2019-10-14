@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:fitsSystemWindows = "true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    tools:context=".AnotherActivity"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="10dp">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <ImageView
+                                android:src="@drawable/image_to_activity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true" />
+                    </LinearLayout>
+                    <ImageButton
+                            android:id="@+id/page2_getBack"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="3dp"
+                            android:scaleType="fitXY"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/previous"
+                    />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="10dp">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="20sp"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                tools:text="this is tittle"
+                                android:id="@+id/page2_title"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/cardview_light_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            <LinearLayout android:layout_width="0dp" android:layout_weight="2" android:layout_height="40dp" android:orientation="horizontal">
+                                <android.support.v7.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        app:cardCornerRadius="20dp"
+                                        android:padding="8dp"
+                                        android:layout_height="40dp">
+                                    <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp">
+                                        <ImageView
+                                                android:src="@drawable/money"
+                                                android:background="@android:color/transparent"
+                                                android:layout_width="match_parent"
+                                                android:textColor="@color/cardview_light_background"
+                                                android:layout_height="40dp"
+                                                android:adjustViewBounds="true" />
+                                    </LinearLayout>
+                                </android.support.v7.widget.CardView>
+                                <TextView
+                                        tools:text="this is pledge"
+                                        android:id="@+id/page2_pledge"
+                                        android:textStyle="bold"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="8dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="2"
+                                        android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:orientation="horizontal" android:layout_height="40dp">
+
+                                <ImageView
+                                        android:src="@drawable/teamwork"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:adjustViewBounds="true" />
+
+                                <TextView
+                                        android:textColor="@android:color/background_light"
+                                        android:textStyle="bold"
+                                        android:textSize="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:id="@+id/page2_backers"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        tools:text="aaaa"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                            android:id="@+id/relative1"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="20sp"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                tools:text="text"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_by"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_by"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_blurb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_sNo"
+                                android:layout_below="@id/page2_blurb"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_sNo"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_percentage"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_currency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                       <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_currency"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_time"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_type"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+
+
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_state"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_country"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+                        <TextView
+                                tools:text="text"
+                                android:layout_below="@id/page2_country"
+                                android:layout_margin="5dp"
+                                android:id="@+id/page2_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"/>
+
+                        <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:onClick="openBrowser"
+                                android:id="@+id/page2_url"
+                                android:src="@drawable/website"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardview">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:paddingLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+            <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:id="@+id/title"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView android:layout_width="wrap_content" app:cardCornerRadius="10dp" android:padding="8dp" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView
+                            android:src="@drawable/android_figure_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/background_light"
+                    android:id="@+id/by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:baselineAligned="false"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp" android:layout_weight="2" android:layout_height="40dp" android:orientation="horizontal">
+                    <android.support.v7.widget.CardView android:layout_width="wrap_content" app:cardCornerRadius="20dp" android:padding="8dp" android:layout_height="40dp">
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp">
+                            <ImageView
+                                    android:src="@drawable/money"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:adjustViewBounds="true"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <TextView
+                            android:id="@+id/pledge"
+                            android:textStyle="bold"
+                            android:textSize="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@android:color/background_light"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            tools:text="emre"/>
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:orientation="horizontal" android:layout_height="40dp">
+
+                    <ImageView
+                            android:src="@drawable/teamwork"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:adjustViewBounds="true" />
+
+                    <TextView
+                            android:textColor="@android:color/background_light"
+                            android:textStyle="bold"
+                            android:textSize="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/backers"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            tools:text="aaaa"/>
+
+                </LinearLayout>
+                <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary">
+
+                    <ImageView
+                            android:id="@+id/image_view_id"
+                            android:tint="@color/cardview_light_background"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
